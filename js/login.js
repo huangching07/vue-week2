@@ -21,7 +21,7 @@ const app = {
                     alert(res.data.message);
                     const { token, expired } = res.data; // 取得登入成功之後產生的token跟expired
                     document.cookie = `hexschool=${token}; expires=${new Date(expired)}`; // 儲存token
-                    window.location.href = "../admin.html"; // 跳轉到後台
+                    window.location.href = "./admin.html"; // 跳轉到後台
                 })
                 .catch((error) => {
                     alert(error.response.data.message);

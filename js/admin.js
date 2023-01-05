@@ -19,7 +19,7 @@ const app = {
                     this.getProducts();
                 })
                 .catch((error) => {
-                    window.location.href = "../login.html"; // 跳轉回登入畫面
+                    window.location.href = "./login.html"; // 跳轉回登入畫面
                     alert(error.response.data.message);
                 })
         },
